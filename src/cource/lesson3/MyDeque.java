@@ -27,6 +27,7 @@ public class MyDeque {
 
     //*
     public void insertRight(int i){
+        if(i > end || i < start) return;
         int tmp = array[start];
         array[start] = i;
         array[++start] = tmp;
