@@ -35,7 +35,7 @@ public class MyDeque {
 
     //*
     public int removeLeft(){
-        int temp = array[end++];
+        int temp = array[end--];
         if (end == maxSize)
             end = -1;
         count--;
