@@ -1,14 +1,14 @@
 package cource.lesson3;
 
-public class MyStack {
+public class MyStack<E> {
 
     private int maxSize;
-    private char[] array;
+    private E[] array;
     private int top;
 
     public MyStack(int size) {
         this.maxSize = size;
-        this.array = new char[maxSize];
+        this.array = (E[]) new Object[maxSize];
         this.top = -1;
     }
 
@@ -22,15 +22,15 @@ public class MyStack {
         return (top == maxSize - 1);
     }
 
-    public void push(char s) {
+    public void push(E s) {
         array[++top] = s;
     }
 
-    public char pop() {
+    public E pop() {
         return array[top--];
     }
 
-    public char peek() {
+    public E peek() {
         return array[top];
     }
 }
