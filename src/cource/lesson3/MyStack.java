@@ -12,7 +12,9 @@ public class MyStack<E> {
         this.top = -1;
     }
 
-
+    public MyStack() {
+        this(10);
+    }
 
     public boolean isEmpty() {
         return (top == -1);
