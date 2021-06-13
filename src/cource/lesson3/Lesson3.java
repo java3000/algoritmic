@@ -18,7 +18,7 @@ public class Lesson3 {
         }
 
         for (int i = 0; i < target.length(); i++) {
-            result[i] = stack.pop();
+            result[i] = (char) stack.pop();
         }
 
         System.out.println(target);
